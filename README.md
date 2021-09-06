@@ -21,5 +21,5 @@ git clone git@github.com:Abimcp/ReactMusicApp.git
 cd ReactMusicApp
 npm i
 npm run dev
-open localhost:8080 in your browser
 ```
+open localhost:8080 in your browser
