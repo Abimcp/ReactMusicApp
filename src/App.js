@@ -1,12 +1,11 @@
 import React from 'react';
-import TrainerCard from './components/TrainerCard';
+import BandCard from './components/BandCard';
 import PokemonCards from './components/PokemonCards';
 
 function App() {
   return (
     <main>
-      <h1>Personal Pokédex</h1>
-      <TrainerCard />
+      <BandCard />
       <PokemonCards />
     </main>
   );
