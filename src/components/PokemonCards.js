@@ -1,30 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const PokemonCards = () => {
-  const [pokemon, setPokemon] = useState([
-    { name: 'Bulbasaur', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" },
-    { name: 'Charmander', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png" },
-    { name: 'Squirtle', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png" },
-    { name: 'Caterpie', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png" },
-    { name: 'Pidgey', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png"},
-    { name: 'Pikachu', img: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png"}
-  ])
+const music = () => {
+  const [title, songLink] = useState([
+    {
+      title: "Mobius Streak",
+      songLink:
+        "https://open.spotify.com/track/08o9yCplgxLM11ymhvkbl8?si=c0dff3e28bcb4938",
+    },
+    {
+      title: "The World It Softly Lulls",
+      songLink:
+        "https://open.spotify.com/track/5ZJWZkSQK2cMpFJFw0t9Y0?si=112918e8332249a0",
+    },
+    {
+      title: "Leap Frog",
+      songLink:
+        "https://open.spotify.com/track/1qDqP46AUKXAUFP6tXjv0r?si=41a8c5aa8be64ddd",
+    },
+  ]);
 
   const renderRows = () => {
-    return pokemon.map(p => <tr><td>{p.name}</td><td><img src={p.img} /></td></tr>)
-  }
+    return music.map((p) => (
+      <tr>
+        <td>{p.title}</td>
+        <td>
+          <img src={p.songLink} />
+        </td>
+      </tr>
+    ));
+  };
 
   return (
-    <table style={{ border: "1px solid black", width: "100vw", textAlign: "center" }}>
+    <table
+      style={{ border: "1px solid black", width: "100vw", textAlign: "center" }}
+    >
       <thead>
         <tr>
           <th>Name</th>
           <th>Image</th>
         </tr>
       </thead>
-      <tbody>
-        { renderRows() }
-      </tbody>
+      <tbody>{renderRows()}</tbody>
     </table>
   );
 };
