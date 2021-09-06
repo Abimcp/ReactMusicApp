@@ -45,4 +45,4 @@ const music = () => {
   );
 };
 
-export default PokemonCards;
+export default music;
