@@ -1,18 +1,25 @@
-### Study Notes
+# Hiatus Kaiyote:
+## _A Discography_
 
-| [Webpack Setup](https://github.com/getfutureproof/fp_guides_wiki/wiki/Intro-to-Module-Bundlers-and-Webpack) | [Intro to React](https://github.com/getfutureproof/fp_guides_wiki/wiki/Intro-to-React) | [Deploy a React client with Netlify](https://github.com/getfutureproof/fp_guides_wiki/wiki/React-Deploy-with-Netlify) |
+[![N|Solid](https://dynamicmedia.livenationinternational.com/Media/u/p/m/bb5a912e-f1a3-408d-9086-a0c8bdbb83ca.jpg)](https://nodesource.com/products/nsolid)
 
-# Exercises
+> We’re always trying to get to that moment where people are overwhelmed in joy, in confusion, in sadness, or in the magnitude of emotion or disbelief – as well as sometimes feeling all of these simultaneously. We like to call this "wondercore", and that's what we’re always aiming for as a group.
+[Learn More](https://hiatuskaiyote.com/)
 
-- Music App: Create a React Website that showcases your favourite artists songs/albums.
-  - Setup your first React App using npm and Webpack.
-  - Install the required libraries
-  - Using JSX make your website a portfolio of their work. The site should be broken down into components that are rendered on the same page. It should contain at the very minimum two components. An example would be:
-    - Their name, music type and an introduction paragraph.
-    - A list of their songs/albums including name,release date and cover art.
-  
-**_NB: Do not consume any APIs to get the data on your chosen artist - hard code for now!_**
+## Features
+- Music tracklist
+- Band biography
 
-## Bonus
-- Build & [deploy](https://github.com/getfutureproof/fp_guides_wiki/wiki/React-Deploy-with-Netlify) your React app
-- Have a go at [styling your app](https://reactjs.org/docs/faq-styling.html)
+## Installation & Usage
+
+visit cranky-minsky-66f817.netlify.app
+
+or
+
+```sh
+git clone git@github.com:Abimcp/ReactMusicApp.git
+cd ReactMusicApp
+npm i
+npm run dev
+open localhost:8080 in your browser
+```
